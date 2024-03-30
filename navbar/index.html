@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>navbar</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+         <a href="#" class="logo">ADVENTURE</a>
+         <div class="nav-links">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Adventures</li></a>
+                <a href="#"><li>Infos</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+         </div>
+         <img src="menu-btn.png" class="menu-hamburger">
+        </nav>
+    </main>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
